@@ -13,6 +13,7 @@
 html, body { height: 100%; }
 
 body {
+  background-image: url(/images/lined_paper.png);
   background-color: #FFF;
   font: 13.34px Helvetica, Arial, sans-serif;
   font-size: small;
@@ -25,9 +26,9 @@ h1, h2, h3, h4, h5, h6 {
 h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+a         { color: #006666; }
+a:hover   { color: #669999; }
+a:visited { color: #666699; }
 
 /*****************************************************************************/
 /*
@@ -157,4 +158,21 @@ ul.posts span {
 
 .post pre.terminal code {
   background-color: #333;
+}
+
+/*****************************************************************************/
+/* My CSS */
+
+.pull-right {
+  float: right;
+}
+
+.title a {
+  display: inline;
+  font-size: 3em;
+}
+
+.header img {
+  width: 7.25em;
+  margin: 1.6em 0 1em 3.5em;  
 }

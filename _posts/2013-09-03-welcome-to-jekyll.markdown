@@ -1,24 +1,12 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "About Doug Wright"
 date:   2013-09-03 05:19:16
-categories: jekyll update
+categories: ruby learn doug wright
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+I taught myself Ruby through the myriad of tools found on the great world wide web. The project to write a children's book on learning Ruby came about from Twitter.
 
-Jekyll also offers powerful support for code snippets:
+I noticed a friend's post about teaching his 6 year old programming with Python. Now, don't get me wrong, I love Python. But Ruby's syntax is so much easier to learn, I had to respond to my friend's tweet. I suggested he teach his kids Ruby.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
-
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
+The only problem was, there were no books for teaching kids programming with Ruby. I couldn't believe it. Not a single book. So I was inspired to write one myself. A few weeks later and here we are today with a simple website and a rough draft. More to come soon!
