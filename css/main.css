@@ -57,7 +57,7 @@ ul.posts span {
 /*****************************************************************************/
 
 .site {
-  font-size: 115%;
+  font-size: 125%;
   text-align: justify;
   width: 42em;
   margin: 3em auto 2em;
@@ -96,7 +96,7 @@ ul.posts span {
 }
 
 .site .footer {
-  font-size: 80%;
+  font-size: 100%;
   color: #666;
   border-top: 4px solid #eee;
   margin-top: 2em;
@@ -175,4 +175,32 @@ ul.posts span {
 .header img {
   width: 7.25em;
   margin: 1.6em 0 1em 3.5em;  
+}
+
+/*****************************************************************************/
+/* for phones - wrap code text */
+@media screen and (max-width : 480px) {
+  pre {
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    word-wrap: break-word;
+  }
+  .site {
+    font-size: 130%;
+    text-align: left;
+    width: 15em;
+    margin: 1em auto 1em;
+    line-height: 1.5em;
+  }
+  .header img {
+    width: 5.25em;
+    margin: 1em 0 0.5em 1.5em;  
+  }
+  .site .footer {
+    font-size: 100%;
+    color: #666;
+    border-top: 4px solid #eee;
+    margin-top: 2em;
+    overflow: hidden;
+  }
 }
