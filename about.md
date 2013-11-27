@@ -1,10 +1,13 @@
 ---
 layout: default
-title: About Doug Wright
+title: About  Doug Wright & Adam Starr
 ---
 
-I taught myself Ruby through the myriad of tools found on the great world wide web. The project to write a children's book on learning Ruby came about from Twitter.
+Doug taught himself Ruby through the myriad of tools found on the great world wide web. Adam has been writing since he could pick up a pen. The project to write a children's book on learning Ruby came about from Twitter.
 
-I noticed a friend's post about teaching his 6 year old programming with Python. Now, don't get me wrong, I love Python. But Ruby's syntax is so much easier to learn, I had to respond to my friend's tweet. I suggested he teach his kids Ruby.
+Doug noticed a friend's post about teaching his 6 year-old how to program with Python.Sharing a love for learning code, but unabashed favoritism for Ruby over Python, Doug suggested the father switch languages now before it was too late! But alas, though there is a Python for Kids book, there is no equivalent for Ruby. Thus began the journey to create this book.
+ 
+A few months later and here we are today with chapter one and more to come. Enjoy!
 
-The only problem was, there were no books for teaching kids programming with Ruby. I couldn't believe it. Not a single book. So I was inspired to write one myself. A few weeks later and here we are today with a simple website and a rough draft. More to come soon!
+[Doug Wright](http://doug.io)  
+[Adam Starr](http://www.linkedin.com/in/adamstarrwriter)
