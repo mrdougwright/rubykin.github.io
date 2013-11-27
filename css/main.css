@@ -30,6 +30,10 @@ a         { color: #006666; }
 a:hover   { color: #669999; }
 a:visited { color: #666699; }
 
+.spacer {
+  height: 30px;
+}
+
 /*****************************************************************************/
 /*
 /* Home
@@ -62,6 +66,8 @@ ul.posts span {
   width: 42em;
   margin: 3em auto 2em;
   line-height: 1.5em;
+  background-color: white;
+  padding: 4% 5% 1% 5%;
 }
 
 .site .header a {
@@ -94,6 +100,20 @@ ul.posts span {
 .site .meta {
   color: #aaa;
 }
+
+.site ul {
+  list-style-type: none;
+  margin-left: 4%;
+}
+
+.site pre {
+  padding: 2%;
+  background-color: #EBEBEB;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin: 2em 3em;
+}
+
 
 .site .footer {
   font-size: 100%;
