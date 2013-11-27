@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About  Doug Wright & Adam Starr
+weight: -1
 ---
 
 Doug taught himself Ruby through the myriad of tools found on the great world wide web. Adam has been writing since he could pick up a pen. The project to write a children's book on learning Ruby came about from Twitter.

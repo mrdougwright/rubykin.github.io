@@ -113,12 +113,11 @@ ul.posts span {
 
 .site pre {
   padding: 2%;
-  background-color: #EBEBEB;
+  background-color: #F3F3F3;
   -moz-border-radius: 5px;
   border-radius: 5px;
   margin: 2em 3em;
 }
-
 
 .site .footer {
   font-size: 100%;
@@ -126,6 +125,7 @@ ul.posts span {
   border-top: 4px solid #eee;
   margin-top: 2em;
   overflow: hidden;
+  padding: 1em 0 0.75em 0;
 }
 
 .site .footer .contact {
@@ -190,6 +190,9 @@ ul.posts span {
 
 .pull-right {
   float: right;
+}
+.pull-left {
+  float: left;
 }
 
 .title a {

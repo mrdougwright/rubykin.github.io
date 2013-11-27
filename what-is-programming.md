@@ -1,9 +1,8 @@
 ---
 layout: default
-title: Chapter 1
+title: What is programming?
+weight: 1
 ---
-
-What is programming? 
 
 Programming is language. We use language to communicate with our friends, and programming is simply a way of communicating with computers.
 

@@ -32,8 +32,16 @@
               {{ content }}
 
             <div class="footer">
+              <div class="pull-left">
+                {% assign pwone = page.weight| plus:1 %}
+                {% for p in site.pages %}
+                  {% if p.weight == pwone %}
+                    <h2><a href="{{ p.url }}">{{ p.title }}</a></h2>
+                  {% endif %}
+                {% endfor %}  
+              </div>
               <div class="pull-right">
-                <p><h2><a href="/about.html">About</a></h2></p>
+                <h2><a href="/about.html">About</a></h2>
               </div>
             </div>
           </div>
