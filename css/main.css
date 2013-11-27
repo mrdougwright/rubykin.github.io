@@ -111,13 +111,19 @@ ul.posts span {
   margin-left: 4%;
 }
 
-.site pre {
-  padding: 2%;
+.site pre, .site code {
+  font-size: 1em;
+  padding: 0.5% 1%;
   background-color: #F3F3F3;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  margin: 2em 3em;
 }
+
+.site pre {
+  padding: 2% 5%;
+  margin: 2em;
+}
+
 
 .site .footer {
   font-size: 100%;

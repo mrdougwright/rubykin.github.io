@@ -72,6 +72,8 @@ Now for some harder ones.
 
 What is the result of 10 % 4 ?
 
-A wizard has a bag of 5 numbers, but he doesn’t know what they are. 
-He needs to find out which of the 5 different numbers are even? 
+A wizard has a bag of five numbers, but he doesn’t know _exactly_ what numbers he has. 
+He wants to find out which of his five numbers are even.
 How might you use modulo to help him?
+
+_Hint: A number divided by two with no remainder is even._
