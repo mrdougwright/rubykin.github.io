@@ -49,7 +49,8 @@ If so, then you my friend have seen a string. Strings are a little bit like back
 "I'm a string!"
 "And_so_am_I"
 "9"
-"This long paragraph is even a string.\nAnd it has these strange \n things that we'll explain later."
+"This long paragraph is even a string.\nAnd it has these strange \n 
+things that we'll explain later."
 ```
 
 9 is such a joker. Did you notice we put the number nine as a string? This is very different than the actual number nine, but we will get to that later.
