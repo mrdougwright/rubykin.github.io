@@ -47,10 +47,24 @@ This doesn’t mean we can’t do this sort of equation, it just means we need t
 => 18
 ```
 
-When you want Ruby to add a number to a string, just type the string and then `.to_i + ` followed by the integer and Ruby will give you the correct answer.
+When you want Ruby to add a number to a string, just type the string and then `.to_i + ` followed by a number and Ruby will give you the correct answer.
 
+Remember those ` \n ` characters from the first chapter? This is what the computer uses to note a _new line_ in your string. So the following string:
 
-Example
+```ruby
+print "One line.\nAnother line.\nAnd another.\n"
+```
+Would print like this:
+
+```
+One line.
+Another line.
+And another.
+```
+In this way, Ruby can store sentences or even whole files inside just one string. Now that you have a better understanding of strings, check out some examples below.
+
+<br />
+__Practice__
 
 What is the result of each of the following?
 
@@ -64,23 +78,32 @@ What is the result of each of the following?
 4) "1234.55".to_f
 
 5) "Not a number".to_i
+
+6) puts "1\n2\n3\n"
 ```
 
-Why might it be useful that the _to integer (to_i)_ method return zero on strings that can’t be represented as numbers?
+```
+6) Why might it be useful that the _to integer_ (to_i) method return zero on
+strings that can’t be represented as numbers?
 
-What do you think the length method does? 
+7) What do you think the length method does? 
+"Count".length
 
-` "Count".length `
+8) How about the split method?
+"Count".split("")
 
-How about the split method?
-
-` "Count".split("") `
-
-What do you think slice does?
-
-` "Count".slice(2) `
+9) What do you think slice does?
+"Count".slice(2)
+```
 
 Want to see more cool String methods? Just call _methods_ on the String class! Type this into IRB:
 
-` IRB$ String.methods `
+`IRB$ String.methods`
 
+```ruby
+# some of the built-in Ruby methods for String
+[:try_convert, :allocate, :new, :superclass, :freeze, :===, :==, :<=>, 
+:<, :<=, :>, :>=, :to_s, :included_modules, :include?, :name, :ancestors, 
+:instance_methods, :public_instance_methods, :protected_instance_methods, 
+:private_instance_methods, :constants, :const_get, :const_set ...
+```

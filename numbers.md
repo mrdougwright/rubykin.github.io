@@ -55,25 +55,29 @@ So, 9 divided by 3 would result in a modulo of zero because there is no remainde
 
 If exponents and modulos are too complex to understand right now, don't worry. Again, they are not a requirement for programming. It's important at this stage to simply understand that the computer can do simple math for you. Check out some examples below.
 
-
-Example
+<br />
+__Practice__
 
 Try these problems in your head, or on paper.
 
 ```ruby
-2 + 3 + 5
-10 - 3
-9 / 3
-4 * 2
-4 ** 2
+1) 2 + 3 + 5
+2) 10 - 3
+3) 9 / 3
+4) 4 * 2
+5) 4 ** 2
 ```
 
 Now for some harder ones.
 
-What is the result of 10 % 4 ?
+```
+6) What is the result of 10 % 4 ?
+```
 
-A wizard has a bag of five numbers, but he doesn’t know _exactly_ what numbers he has. 
-He wants to find out which of his five numbers are even.
-How might you use modulo to help him?
+```
+7) A wizard has a bag of five numbers, but he doesn’t know exactly 
+what numbers he has. He wants to find out which of his five numbers
+are even. How might you use modulo to help him?
 
-_Hint: A number divided by two with no remainder is even._
+Hint: A number divided by two with no remainder is even.
+```
