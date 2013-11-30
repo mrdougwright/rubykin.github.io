@@ -83,8 +83,8 @@ What is the result of each of the following?
 ```
 
 ```
-7) Why might it be useful that the _to integer_ (to_i) method return zero on
-strings that can’t be represented as numbers?
+7) Why might it be useful that the _to integer_ (to_i) method return zero
+on strings that can’t be represented as numbers?
 
 8) What do you think the length method does? 
 "Count".length
