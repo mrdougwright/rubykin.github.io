@@ -202,3 +202,4 @@ we can use these keys to access our data. In order to make a new spell,
 our wizard needs 2 frogs, 3 herbs, 1 scroll and 2 blue potions. How can 
 we remove these items from our hash? Hint: We can set the value of a key
 item to itself, minus how many items removed.
+```

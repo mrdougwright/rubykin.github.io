@@ -76,7 +76,7 @@ Now for some harder ones.
 
 ```
 7) A wizard has a bag of five numbers, but he doesn’t know exactly 
-what numbers he has. He wants to find out which of his five numbers
+which numbers he has. He wants to find out which of his five numbers
 are even. How might you use modulo to help him?
 
 Hint: A number divided by two with no remainder is even.

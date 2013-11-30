@@ -106,8 +106,12 @@ What would the computer say? Try to do these in your head before going to IRB. R
 
 6) 10 != 10
 
-What about strings?
-7) "dog" == "cat"
+7) 10.object_id == 10.object_id
 
-8) "cat" == "cat"
+What about strings?
+8) "dog" == "cat"
+
+9) "cat" == "cat"
+
+10) "cat.object_id" == "cat.object_id"
 ```

@@ -1,3 +1,5 @@
 name: RubyKin
 markdown: redcarpet
 pygments: true
+
+production_url: http://rubykin.com

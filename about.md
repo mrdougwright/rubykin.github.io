@@ -8,5 +8,6 @@ Doug taught himself Ruby through the myriad of tools found on the great world wi
 
 Doug noticed a friend's post about teaching his 6 year-old how to program with Python. Sharing a love for learning code, but unabashed favoritism for Ruby over Python, Doug suggested the father switch languages now before it was too late! But alas, though there is a _Python for Kids_ book, there is no equivalent for Ruby. Thus began the journey to create this book.
 
-[Doug Wright](http://doug.io)  
-[Adam Starr](http://www.linkedin.com/in/adamstarrwriter)
+<a href="http://doug.io" target="_blank">Doug Wright</a>
+
+<a href="http://www.linkedin.com/in/adamstarrwriter" target="_blank">Adam Starr</a>
