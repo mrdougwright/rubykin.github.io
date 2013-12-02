@@ -2,12 +2,13 @@
 layout: default
 title: Strings
 weight: 3
+description: A string in programming is a type of simple storage. You can place words, sentences, or even files inside strings, using quotes, to store and display information. This chapter explains Strings in detail.
 ---
 
 In Ruby, we can also perform some math-like operations using our friends, the strings. For example, we can multiply a string like so:
 
 ```ruby
-"repeat " * 3 
+"repeat " * 3
 => "repeat repeat repeat "
 ```
 
@@ -16,7 +17,7 @@ In the above example we have a string: `"repeat "` that we multiply ` * ` by thr
 ```ruby
 "repeat " + "repeat " + "repeat "
 => "repeat repeat repeat "
-``` 
+```
 
 In fact, you can write either of these lines of code and the result will be the same. Much in the same way that writing ` 3 + 3 + 3 = 9 ` yields the same result as ` 3 * 3 = 9 `. When the computer adds strings together we call it concatenation.
 
@@ -27,7 +28,7 @@ In fact, you can write either of these lines of code and the result will be the 
 
 In the example above, there are two strings, one is `"Cat and"` and the second string is `"Dog"`. By giving the command to add the two strings, we are able to join both strings together using the magic of concatenation. (Concatenation is just a fancy old Latin word for join together, or chain together...Kind of like you chain your bike to the bike racks.)
 
-Ready to try it out? 
+Ready to try it out?
 
 Now, open Terminal again (or <a href="http://repl.it/languages/Ruby" target="_blank">Repl.it</a>) and try multiplying and adding a few strings yourself to get the hang of it.
 
@@ -86,7 +87,7 @@ What is the result of each of the following?
 7) Why might it be useful that the _to integer_ (to_i) method return zero
 on strings that can’t be represented as numbers?
 
-8) What do you think the length method does? 
+8) What do you think the length method does?
 "Count".length
 
 9) How about the split method?
@@ -102,8 +103,8 @@ Want to see more cool String methods? Just call _methods_ on the String class! T
 
 ```ruby
 # some of the built-in Ruby methods for String
-[:try_convert, :allocate, :new, :superclass, :freeze, :===, :==, :<=>, 
-:<, :<=, :>, :>=, :to_s, :included_modules, :include?, :name, :ancestors, 
-:instance_methods, :public_instance_methods, :protected_instance_methods, 
+[:try_convert, :allocate, :new, :superclass, :freeze, :===, :==, :<=>,
+:<, :<=, :>, :>=, :to_s, :included_modules, :include?, :name, :ancestors,
+:instance_methods, :public_instance_methods, :protected_instance_methods,
 :private_instance_methods, :constants, :const_get, :const_set ...
 ```

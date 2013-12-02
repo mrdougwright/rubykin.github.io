@@ -2,15 +2,16 @@
 layout: default
 title: Methods
 weight: 8
+description: A method written in code is a way of doing something. It's a small function or chore. Many methods put together essentially make up a full program.
 ---
 
-A big part of programming is simply breaking down large problems into smaller and smaller instructions that can work together to create a solution. Let’s think of this using a real world example. Imagine you are playing baseball and its your turn to bat. This critical moment when you swing and hit the ball for a home run can be seen as many smaller moments that led to the big play. 
+A big part of programming is simply breaking down large problems into smaller and smaller instructions that can work together to create a solution. Let’s think of this using a real world example. Imagine you are playing baseball and its your turn to bat. This critical moment when you swing and hit the ball for a home run can be seen as many smaller moments that led to the big play.
 
-First you picked up a bat. Then you took a few practices swings. Then you walked up to the plate, you readied your stance, looked at the pitcher. Finally, you took a breath and swung! Each of these small steps can be seen as methods (small chunks of instructions) that led to your home run. 
+First you picked up a bat. Then you took a few practices swings. Then you walked up to the plate, you readied your stance, looked at the pitcher. Finally, you took a breath and swung! Each of these small steps can be seen as methods (small chunks of instructions) that led to your home run.
 
 We can look at this another way. When you play a video game and reach a new level, there may actually be _real_ methods that are called by the game. Perhaps the game contains a 'life count' method that counts how many lives you have left. Another method could tally up your current score. A third method may calculate your character's current state of health. Each of these methods would take input from your actions in the game, and go back and get information from the program to keep everything updated and accurate.
 
-To understand methods a little better, let’s jump into writing one ourselves. Here’s a very simple method you can write yourself that merely puts information to the screen. You can write a method inside IRB (the Ruby Interpreter) without creating a new file. There is an online version as well at <a href="http://repl.it/languages/Ruby" target="_blank">Repl.it</a>). 
+To understand methods a little better, let’s jump into writing one ourselves. Here’s a very simple method you can write yourself that merely puts information to the screen. You can write a method inside IRB (the Ruby Interpreter) without creating a new file. There is an online version as well at <a href="http://repl.it/languages/Ruby" target="_blank">Repl.it</a>).
 
 In your terminal type irb:
 
@@ -24,9 +25,9 @@ irb(main):003:1> end
 
 In Ruby, we define a method using the `def` keyword. The next word after def is the name of our method. This would be our _hello_ method, which takes no arguments (kind of like your parents at bedtime). We’ll explain arguments in a moment.
 
-Like at the end of a movie or bedtime story, the word `end` in Ruby means the same thing as it does to you--that this is the _end_ of our method. Any code in between our def and end keywords will be run by the computer for this particular method. This code is our "block" we give the method to execute. 
+Like at the end of a movie or bedtime story, the word `end` in Ruby means the same thing as it does to you--that this is the _end_ of our method. Any code in between our def and end keywords will be run by the computer for this particular method. This code is our "block" we give the method to execute.
 
-In order to write and save several methods, it will be easier to create a file and run the code inside the file, so let’s do that. Exit the terminal by typing `exit`. 
+In order to write and save several methods, it will be easier to create a file and run the code inside the file, so let’s do that. Exit the terminal by typing `exit`.
 
 Open up a text editor. I like using <a href="http://www.sublimetext.com/" target="_blank">Sublime</a>, but you can use any kind. There are several free text editors for download online. Create a new file and type in the method we wrote above.
 
@@ -36,7 +37,7 @@ Open up a text editor. I like using <a href="http://www.sublimetext.com/" target
 3. end
 ```
 
-Save this file as `hello.rb` to your desktop. Now you can run this file from your terminal. In your terminal, navigate to the Desktop directory using `cd`, the change directory command. 
+Save this file as `hello.rb` to your desktop. Now you can run this file from your terminal. In your terminal, navigate to the Desktop directory using `cd`, the change directory command.
 
 If you don’t know how to find your file from the terminal console, I can help you with a simple trick. Just type the following. (This will take you to your root folder and then to your desktop).
 
@@ -53,7 +54,7 @@ Your-Computer-Name:Desktop $ ruby hello.rb
 Your-Computer-Name:Desktop $
 ```
 
-If you had no errors and no output, then your program ran as expected. Great job! 
+If you had no errors and no output, then your program ran as expected. Great job!
 
 But wait, why didn’t it put "Hello World!" to the screen? Well, this is because our hello method was not _called_. We simply ran a program that contained our hello method, but we didn’t specifically _call_ upon that method to be run by the computer. We can fix this by updating our hello.rb file.
 
@@ -61,7 +62,7 @@ But wait, why didn’t it put "Hello World!" to the screen? Well, this is becaus
 1. def hello
 2.   puts "Hello World!"
 3. end
-4. 
+4.
 5. hello()
 ```
 
@@ -73,7 +74,7 @@ Hello World!
 Your-Computer-Name:$
 ```
 
-Congratulations! You just ran your first Ruby program with its very own method. It ran successfully and outputted "Hello World!" to the screen using Ruby’s built in `puts` method. 
+Congratulations! You just ran your first Ruby program with its very own method. It ran successfully and outputted "Hello World!" to the screen using Ruby’s built in `puts` method.
 
 Now let’s try writing a method that takes an argument. What if we want to multiply any two numbers together using our own method. We could write something like this.
 
@@ -146,7 +147,7 @@ Let’s run this from our IRB terminal. First, save the code above in a file cal
 How old are you in years?
 ```
 
-Now that you have a basic understanding of methods, see if you can write one yourself. You could write an adventure word game or create your own calculator. 
+Now that you have a basic understanding of methods, see if you can write one yourself. You could write an adventure word game or create your own calculator.
 
 <br />
 __Practice__
@@ -169,6 +170,6 @@ __Practice__
      "Programming is not math"
    end
 
-4) Write a method that takes a word as an argument. Make the method 
+4) Write a method that takes a word as an argument. Make the method
    return the word and the string “, is awesome!”.
 ```

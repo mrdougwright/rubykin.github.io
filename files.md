@@ -2,6 +2,7 @@
 layout: default
 title: Files
 weight: 10
+description: File creation, updating and reading in Ruby.
 ---
 
 __Understanding the In’s and Out’s__
@@ -62,7 +63,7 @@ We open our file with `File.open` and then call the readlines method. Each line 
 file_array = File.open("our_file.txt").readlines.each do |line|
   line.chomp!
 end
-=> ["This is our text file.", "This is line 2 of the file.", 
+=> ["This is our text file.", "This is line 2 of the file.",
     "And this is line 3."]
 ```
 

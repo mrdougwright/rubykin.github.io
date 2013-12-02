@@ -2,6 +2,7 @@
 layout: default
 title: Variables
 weight: 4
+description: Core to coding principles, a variable is a way of storing data that is sent and received by the methods we write in our software. When we compute something, and have a result, we usually store that in a variable.
 ---
 
 At their simplest, variables are merely storage containers. They help us hold information. You create your own variables, starting with a lowercase letter followed by an equal sign and its value (usually a number or a string, but sometimes more complex code can be stored in a variable). You’ve seen this before in math.
@@ -20,7 +21,7 @@ y = x
 z = 12
 ```
 
-In order to store the value 12, the computer creates a location in memory with an address, let's assume the address is ABC12. In this sense, a variable is like an X on a treasure map, guiding you to the right location. 
+In order to store the value 12, the computer creates a location in memory with an address, let's assume the address is ABC12. In this sense, a variable is like an X on a treasure map, guiding you to the right location.
 
 Yet variables don't _actually_ store their information--they point to it. Or in another way, variables store memory addressess that store information. In the example above, each variable points to the same memory address that stores the number 12. This way the computer doesn't need to create three different memory locations for one value, it can use ABC12 for all three.
 
@@ -38,7 +39,7 @@ x = y   => x points to memory address AB1
 y = 7   => y now points to memory address CD1, which contains 7
 ```
 
-The trick here is to understand that X does _not equal_ Y. Remember, X only _POINTS_ to the value stored in the memory address that Y points to (AB1). No matter what happens later to Y, the only thing X needs to remember is the location of AB1 (which will always be 5 while this program is running). 
+The trick here is to understand that X does _not equal_ Y. Remember, X only _POINTS_ to the value stored in the memory address that Y points to (AB1). No matter what happens later to Y, the only thing X needs to remember is the location of AB1 (which will always be 5 while this program is running).
 
 When we change the value of Y to 7, we are actually telling the computer to create a new memory address that contains the value 7 and point to it. X does not change its original address, so the value of X remains 5.
 
@@ -68,10 +69,10 @@ __Practice__
 ```
 1) Store the value of 54 / 3 into the variable x. What is the value of x?
 
-2) Give the value of x to y, a new variable. Now make x equal to itself 
+2) Give the value of x to y, a new variable. Now make x equal to itself
 divided by 3. What’s the value of x? What’s the value of y?
 
-3) What if we performed some math on our variables? If we set x to 12, 
+3) What if we performed some math on our variables? If we set x to 12,
 what’s x divided by 3?
 
 4) What’s the value of x now?

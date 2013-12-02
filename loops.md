@@ -2,6 +2,7 @@
 layout: default
 title: Loops
 weight: 6
+description: A loop is a bit of code that repeats a specific task, until we tell it to stop. This chapter explains the basic loop used in programming.
 ---
 
 At its most basic level, a loop is when a computer repeats a specific task. A computer is kind of like a robot, because you can make it do lots of things very quickly. When you give it a loop, you're telling the computer to repeat a task over and over. Since the computer can perform thousands of operations within a second, loops become very powerful. Let’s look at a previous programing example again to help us to start understanding loops.
@@ -17,7 +18,7 @@ puts "Finished the while loop."
 
 This is called a `while` loop. The statement after the word _while_ must be true for the loop to continue running. So, while the x variable is less than 5, the computer will execute the code (follow our block of instructions) between _while_ and _end_ until X no longer is less than 5.
 
-This loop tells the computer to perform a task _WHILE_ certain things are happening. Your parents would tell you to look both ways, _while_ you cross the street. In a way, you are being programmed to perform the task of looking both ways before crossing the street. 
+This loop tells the computer to perform a task _WHILE_ certain things are happening. Your parents would tell you to look both ways, _while_ you cross the street. In a way, you are being programmed to perform the task of looking both ways before crossing the street.
 
 The word `puts` is a method that simply "puts" the following content to the screen.
 
@@ -35,7 +36,7 @@ Here is some pseudo code to see what's happening while this executes.
 8) "Finished the while loop." is printed to the screen.
 ```
 
-In this example, the x variable is set to zero outside the while loop. When the while loop begins, the computer checks to see if x is less than 5. Since 0 is less than 5, this is a true statement and the computer moves on to puts x, which displays the value of x to the screen. The next operation is to assign x the value of x + 1 (in this case 0 + 1). When it gets to the end, the loop repeats to see if x is still less than 5. Since 1 is less than 5, we put 1 to the screen and assign x the value of 1 + 1, and the process continues. Once x is equal to 5, the loop stops because the statement (5 < 5) is no longer true, it's false. After exiting the loop the computer executes the final puts statement. 
+In this example, the x variable is set to zero outside the while loop. When the while loop begins, the computer checks to see if x is less than 5. Since 0 is less than 5, this is a true statement and the computer moves on to puts x, which displays the value of x to the screen. The next operation is to assign x the value of x + 1 (in this case 0 + 1). When it gets to the end, the loop repeats to see if x is still less than 5. Since 1 is less than 5, we put 1 to the screen and assign x the value of 1 + 1, and the process continues. Once x is equal to 5, the loop stops because the statement (5 < 5) is no longer true, it's false. After exiting the loop the computer executes the final puts statement.
 
 The end result looks something like this:
 
@@ -69,7 +70,7 @@ Chomp is also a method. Its special task is to remove the last _new line_ charac
 Gets and chomp are merely methods used to assign the user’s input to the answer variable (without that strange new line character). Once the user enters the right answer, the loop ends and ‘That’s right!’ is printed to the screen.
 
 <br />
-We can look at another example using a _for loop_. 
+We can look at another example using a _for loop_.
 
 ```ruby
 for number in 1..5 do
@@ -77,7 +78,7 @@ for number in 1..5 do
 end
 ```
 
-The for loop starts without a true condition being met. This loop will execute the code between _do_ and _end_ once for every number in the range 1 through 5 (that's the 1..5 part). The word `number` is just a temporary variable that represents each item within our _for loop_ range. For example, a range of 2 through 8 would be written 2..8. A range of 1 through 25 would be written 1..25. Easy, right? 
+The for loop starts without a true condition being met. This loop will execute the code between _do_ and _end_ once for every number in the range 1 through 5 (that's the 1..5 part). The word `number` is just a temporary variable that represents each item within our _for loop_ range. For example, a range of 2 through 8 would be written 2..8. A range of 1 through 25 would be written 1..25. Easy, right?
 
 The funny number sign and curly brackets is a string interpolation. We will cover this later, but all you need to know right now is that it places the value of our _number_ variable inside the string. The output would look like this:
 
@@ -96,7 +97,7 @@ Imagine a comic book collection, or a marble collection, or a toy collection, th
 <br />
 __Practice__
 
-Let’s pretend we’re at the beach, patiently waiting for our wizard to arrive at sunset. We could represent this as a piece of code. More specifically, we could write this as a while loop. Let’s assume the sun sets around 7pm, and we start waiting on the beach at 5pm. 
+Let’s pretend we’re at the beach, patiently waiting for our wizard to arrive at sunset. We could represent this as a piece of code. More specifically, we could write this as a while loop. Let’s assume the sun sets around 7pm, and we start waiting on the beach at 5pm.
 
 ```ruby
 sunset = 7
@@ -116,9 +117,9 @@ puts "The wizard has arrived!"
 This while loop would result in this output:
 
 ```
-Still waiting for the wizard. It’s now 5 o’clock  
-Still waiting for the wizard. It’s now 6 o’clock  
-Still waiting for the wizard. It’s now 7 o’clock  
+Still waiting for the wizard. It’s now 5 o’clock
+Still waiting for the wizard. It’s now 6 o’clock
+Still waiting for the wizard. It’s now 7 o’clock
 The wizard has arrived!
 ```
 

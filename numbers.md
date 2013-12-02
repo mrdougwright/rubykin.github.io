@@ -2,11 +2,12 @@
 layout: default
 title: Numbers
 weight: 2
+description: Numbers in programming work much like they do in math. You can add, subtract, multiply, divide and more...
 ---
 
-Numbers! Yay, Math is fun. 
+Numbers! Yay, Math is fun.
 
-Remember math? So does Ruby. Ruby uses the same adding, subtracting, multiplication and division that you do. 
+Remember math? So does Ruby. Ruby uses the same adding, subtracting, multiplication and division that you do.
 
 ```ruby
 2 + 2 = 4
@@ -34,7 +35,7 @@ As a third option, check out <a href="http://repl.it/languages/Ruby" target="_bl
 
 So, what is IRB anyway?
 IRB stands for Interactive Ruby Shell. An Interactive Ruby Shell is like a little secret fort located inside your computer. You can use your IRB to play around with Ruby and learn different Ruby commands. Now, open up your IRB and try typing some of the calculations above to see what the computer returns.
-Ruby can also handle exponents. 
+Ruby can also handle exponents.
 
 Exponents tell a number how many times it should be multiplied. For example, 2 times 2 equals 4, 4 times 2 equals 8. So, 2**3 means 2 times 2 times 2, or 8. Three multiplied by itself twice equals 9. 3 times 3 equals 9. Don't worry about exponents if they are unfamiliar to you. They are not necessary to learn programming!
 
@@ -43,7 +44,7 @@ Exponents tell a number how many times it should be multiplied. For example, 2 t
 3 ** 2 => 9
 ```
 
-In addition to these standard math operations, the computer has something called the modulo operator, which is represented using a percent symbol: %. Whenever you see the % the computer knows you are looking for the modulo operator. The modulo’s job is to finds the remainder after dividing one number with another. The remainder is what is left over, or remains when you divide one big number by a smaller number. 
+In addition to these standard math operations, the computer has something called the modulo operator, which is represented using a percent symbol: %. Whenever you see the % the computer knows you are looking for the modulo operator. The modulo’s job is to finds the remainder after dividing one number with another. The remainder is what is left over, or remains when you divide one big number by a smaller number.
 
 So, 9 divided by 3 would result in a modulo of zero because there is no remainder. Since 3 divides evenly into 9 there are no numbers left over, and that is why 9 modulo 3 is 0. Now, let’s try it again with a different set of numbers. If we looked at 9 modulo 2, we would have a remainder, or a modulo operator of 1, because 9 divided by 2 equals 8 leaving a remainder of 1.
 
@@ -75,7 +76,7 @@ Now for some harder ones.
 ```
 
 ```
-7) A wizard has a bag of five numbers, but he doesn’t know exactly 
+7) A wizard has a bag of five numbers, but he doesn’t know exactly
 which numbers he has. He wants to find out which of his five numbers
 are even. How might you use modulo to help him?
 

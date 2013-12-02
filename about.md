@@ -2,6 +2,7 @@
 layout: default
 title: About  Doug Wright & Adam Starr
 weight: -1
+description: Doug Wright and Adam Starr wrote the first Ruby book for Kid's. Seeing the importance of coding from their extensive experience in the software industry, they took it upon themselves to give back and teach.
 ---
 
 Doug taught himself Ruby through the myriad of tools found on the great world wide web. Adam has been writing since he could pick up a pen. The project to write a children's book on learning Ruby came about from Twitter.

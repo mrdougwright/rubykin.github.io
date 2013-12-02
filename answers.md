@@ -2,6 +2,7 @@
 layout: default
 title: Answers to Practice Problems
 weight: 11
+description: Answers to Practice Problems for RubyKin chapters.
 ---
 
 <br />
@@ -26,12 +27,12 @@ weight: 11
 6) What is the result of 10 % 4 ?
 => 2
 
-7) A wizard has a bag of five numbers, but he doesn’t know exactly 
+7) A wizard has a bag of five numbers, but he doesn’t know exactly
 which numbers he has. He wants to find out which of his five numbers
 are even. How might you use modulo to help him?
 
 If we look at each number as "X" we can use modulo:
-if x % 2 == 0 is true, it’s an even number. 
+if x % 2 == 0 is true, it’s an even number.
 if x % 2 == 0 is false, it’s an odd number.
 ```
 
@@ -70,7 +71,7 @@ on strings that can’t be represented as numbers?
 a zero, noting the successful call (no error) and the value zero, which
 could represent zero numbers in the string.
 
-8) What do you think the length method does? 
+8) What do you think the length method does?
 "Count".length
 => 5
 # Counts the number of letters or items in the string.
@@ -96,14 +97,14 @@ this case is an index of 2.
 x = 54 / 3
 => 18
 
-2) Give the value of x to y, a new variable. Now make x equal to itself 
+2) Give the value of x to y, a new variable. Now make x equal to itself
 divided by 3. What’s the value of x? What’s the value of y?
 y = x
 => 18
 x = x / 3
 => 6
 
-3) What if we performed some math on our variables? If we set x to 12, 
+3) What if we performed some math on our variables? If we set x to 12,
 what’s x divided by 3?
 x = 12
 x / 3
@@ -170,39 +171,39 @@ equal 8.
 
 ```
 1) Create a hash for the Wizard’s magic bag. Inside the bag, we’ll put
-3 frogs, 5 herbs, and 10 scrolls. Set the hash to the variable "bag". 
+3 frogs, 5 herbs, and 10 scrolls. Set the hash to the variable "bag".
 What does your hash look like?
 bag = {"frogs" => 3, "herbs" => 5, "scrolls" => 10}
 
-2) Remember, hashes consist of key value pairs of any data, not just 
+2) Remember, hashes consist of key value pairs of any data, not just
 numbers. Let’s add a wizard’s spell and its result (which the wizard
-can never seem to remember). Add a spell to our wizard’s bag with the 
-key: "shazam" and the value "turns subject into a frog". Now what's 
+can never seem to remember). Add a spell to our wizard’s bag with the
+key: "shazam" and the value "turns subject into a frog". Now what's
 in our bag?
 bag["shazam"] = "turns subject into a frog"
 bag
 => {"frogs"=>3, "herbs"=>5, "scrolls"=>10, "shazam"=>"turns subject
 into a frog"}
 
-3) Our wizard has a change of heart and decides he never wants to turn 
-anyone into a frog. How can we remove the spell "shazam" from our 
+3) Our wizard has a change of heart and decides he never wants to turn
+anyone into a frog. How can we remove the spell "shazam" from our
 wizard bag?
 bag.delete("shazam")
 => "turns subject into a frog"
 
-4) Our wizard has recently acquired 3 different types of potions. 
-3 orange potions, 5 blue potions and 7 red potions. How might we add 
-another hash of potions to our bag? Hint: remember that we can have 
+4) Our wizard has recently acquired 3 different types of potions.
+3 orange potions, 5 blue potions and 7 red potions. How might we add
+another hash of potions to our bag? Hint: remember that we can have
 collections within a collection.
 bag["potions"] = {"orange" => 3, "blue" => 5, "red" => 10}
 bag
-=> {"frogs"=>3, "herbs"=>5, "scrolls"=>10, 
+=> {"frogs"=>3, "herbs"=>5, "scrolls"=>10,
     "potions"=> {"orange"=>3, "blue"=>5, "red"=>10} }
 
-5) Now that our bag has four keys (frogs, herbs, scrolls and potions), 
-we can use these keys to access our data. In order to make a new spell, 
-our wizard needs 2 frogs, 3 herbs, 1 scroll and 2 blue potions. How can 
-we remove these items from our hash? 
+5) Now that our bag has four keys (frogs, herbs, scrolls and potions),
+we can use these keys to access our data. In order to make a new spell,
+our wizard needs 2 frogs, 3 herbs, 1 scroll and 2 blue potions. How can
+we remove these items from our hash?
 Hint: We can set the value of a key item to itself, minus how many
 items removed.
 
@@ -215,7 +216,7 @@ bag["scrolls"] = bag["scrolls"] - 1
 bag["potions"]["blue"] = bag["potions"]["blue"] - 2
 => 3
 bag
-=> {"frogs" => 1, "herbs" => 2, "scrolls" => 9, "potions" => 
+=> {"frogs" => 1, "herbs" => 2, "scrolls" => 9, "potions" =>
 {"orange" => 3, "blue" => 3, "red" => 10} }
 ```
 
@@ -244,7 +245,7 @@ bag
 => "Programming is not math"
 # Methods return their last line by default
 
-4) Write a method that takes a word as an argument. Make the method 
+4) Write a method that takes a word as an argument. Make the method
    return the word and the string “, is awesome!”.
    def awesomify(word)
      word + ", is awesome!"
@@ -275,8 +276,8 @@ D's
 
 3) What does select do for this hash?
    food = {
-     "apple" => "fruit", 
-     "carrot" => "vegetable", 
+     "apple" => "fruit",
+     "carrot" => "vegetable",
      "tomato" => "fruit"
    }
    food.select do |item, category|

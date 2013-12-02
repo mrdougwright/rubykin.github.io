@@ -2,6 +2,7 @@
 layout: default
 title: What is programming?
 weight: 1
+description: Programming is simply a way of communicating with computers. This book teaches you the basic elements needed to learn how to code.
 ---
 
 Programming is language. We use language to communicate with our friends, and programming is simply a way of communicating with computers.
@@ -21,11 +22,11 @@ In this book we’ll start learning the general concepts of programming by looki
 <br />
 __Integers, Floats and Strings__...and maybe Ice Cream
 
-Before we can understand how to write programs, we need to understand data. Data is simply information that can be inputed, outputed, store or manipulated by the computer. The two fundamental types of data used in almost every programming language are _numbers_ and _strings_. 
+Before we can understand how to write programs, we need to understand data. Data is simply information that can be inputed, outputed, store or manipulated by the computer. The two fundamental types of data used in almost every programming language are _numbers_ and _strings_.
 
 Numbers come in two tasty flavors. Integers, which are whole numbers without a decimal point, and floats, numbers that contain a decimal.
 
-For example, these are integers: 
+For example, these are integers:
 
 ```ruby
 1, 7, 0, 13, 2000
@@ -41,7 +42,7 @@ Everytime you see a whole number like 8 or 19 you will know they are integers, a
 
 Simple, right? Ok, let's keep going.
 
-The second type of data, or information given to a computer, are called _strings_. What’s a string? "Anything between quotes is a string." Since that last sentence was inside of quotes, it was technically a string! Easy peezy. You probably see strings all the time without even realizing it! 
+The second type of data, or information given to a computer, are called _strings_. What’s a string? "Anything between quotes is a string." Since that last sentence was inside of quotes, it was technically a string! Easy peezy. You probably see strings all the time without even realizing it!
 
 For example, have you ever seen an alert message on your computer saying this: "File does not exist!" Somewhere inside some program an engineer wrote that sentence and put it in quotes as a string. Then you went looking for a missing file and that string was printed to the screen.
 
@@ -51,7 +52,7 @@ Strings are a little bit like backpacks or lunch pails, they are great for stori
 "I'm a string!"
 "And_so_am_I"
 "9"
-"This long paragraph is even a string.\nAnd it has these strange \n 
+"This long paragraph is even a string.\nAnd it has these strange \n
 things that we'll explain later."
 ```
 

@@ -2,6 +2,7 @@
 layout: default
 title: If and Else
 weight: 5
+description: A conditional in software programming is a basic quesion: If (some condition is true), do it; else, do something else. This chapter explains basic conditionals.
 ---
 
 "If you clean your room then you can play, or else you won’t." - Mom
@@ -16,7 +17,7 @@ A conditional is something that depends on other factors. If this _something_ ha
 
 ```ruby
 # set an x variable to the value 5
-x = 5 
+x = 5
 
 # start the if / else conditional
 if x <= 10
@@ -28,14 +29,14 @@ end
 
 In a conditional, the computer checks to see that the code after the _if_ is true. We call this code a block, which just means a small piece of code that has some function. In this case, our block is `X <= 10`.
 
-So, _if_ our block is _true_ (if X is less than or equal to 10), the computer will perform the action in the next line below the if statement. Since X is equal to 5, it _is_ less than 10, and the value 5 is _put_ on the screen. If X were 11, the conditional (X <= 10) would realize this was a false statement, and the string "Number is greater than 10" would be outputted (shown) on the screen. 
+So, _if_ our block is _true_ (if X is less than or equal to 10), the computer will perform the action in the next line below the if statement. Since X is equal to 5, it _is_ less than 10, and the value 5 is _put_ on the screen. If X were 11, the conditional (X <= 10) would realize this was a false statement, and the string "Number is greater than 10" would be outputted (shown) on the screen.
 
 When the computer moves through an if-else conditional, it will follow the instructions under the _first_ if statement that evaluates to true. It then ignores all other conditions in the if-else conditional.
 
 <br />
 __What is a boolean?__
 
-We've just learned how a conditional checks to see if something is `true` or `false`. A true or false value is called a _boolean_ in programming. We could write another conditional in a different way using booleans. 
+We've just learned how a conditional checks to see if something is `true` or `false`. A true or false value is called a _boolean_ in programming. We could write another conditional in a different way using booleans.
 
 ```ruby
 if false
@@ -94,7 +95,7 @@ __Practice__
 What would the computer say? Try to do these in your head before going to IRB. Remember, the answers will be a boolean value, either true or false.
 
 ```
-1) Is 3 > 5 ? 
+1) Is 3 > 5 ?
 
 2) 3 < 5
 

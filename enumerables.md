@@ -2,6 +2,7 @@
 layout: default
 title: Enumerables
 weight: 9
+description: The Enumerable is a built-in Ruby module that allows you to iterate (go over) the elements in a collection. Here we review four of the basic enumerables.
 ---
 
 The Enumerable module is a collection of built-in Ruby methods that allow you to scan, sort, search and manipulate collections. Remember that collections come in two forms, hashes and arrays. We’ll cover four of the basic enumerables in this chapter:
@@ -36,12 +37,12 @@ toys.each do |toy|
 end
 ```
 
-The curly brackets are a way of writing `do` and `end` in one line. You don’t have to use them, but it is a shortcut that you can use if you want! Either way works, and Ruby will look to execute the code inside of our `do-end` or `{ }` block. Now, let’s look at how we might use the each method on a hash. 
+The curly brackets are a way of writing `do` and `end` in one line. You don’t have to use them, but it is a shortcut that you can use if you want! Either way works, and Ruby will look to execute the code inside of our `do-end` or `{ }` block. Now, let’s look at how we might use the each method on a hash.
 
 Imagine we had more than one toy in our collection. (If your parents are teaching you how to code in Ruby, you probably have a lot more than one toy in your collection. Lucky you!) We might use a hash to better represent or organize our toy box. Using each, we can print the toy and the number of toys in our collection.
 
 ```ruby
-toys = {"car" => 1, "ball" => 3, "super hero action figure" => 2, 
+toys = {"car" => 1, "ball" => 3, "super hero action figure" => 2,
 "stuffed animal" => 8}
 toys.each { |key, value| puts "#{key}: #{value}" }
 car: 1
@@ -70,10 +71,10 @@ In the example above, each item in the my_array can be called by its index. The 
 
 ```ruby
 my_array = ['ball', 'bat', 'hat', 'uniform', 'shoes', 'lucky glove']
-my_array.each_with_index do |item, index| 
+my_array.each_with_index do |item, index|
   if index % 2 == 0
     puts item
-  end  
+  end
 end
 ```
 
@@ -135,7 +136,7 @@ Here’s an example of how we might use the select method in a more useful way. 
 
 ```ruby
 test_scores = [23,80,34,99,54,82,95,78,85]
-test_scores.select do |score| 
+test_scores.select do |score|
   score > 80
 end
 => [99, 82, 95, 85]
@@ -144,7 +145,7 @@ end
 Here we use select to look at each element in the array. This value will be temporarily stored in the `score` variable. Then each particular score is checked to see if it is greater than 80. Each of the scores that are greater than 80 will be collected and returned as an array.
 
 ```ruby
-test_results = {"Bobby" => 80, "Jane" => 95, "Adam" => 99, 
+test_results = {"Bobby" => 80, "Jane" => 95, "Adam" => 99,
 "Doug" => 65, "Sue" => 89, "Kim" => 91}
 
 good_students = test_results.select do |student, score|
@@ -155,7 +156,7 @@ end
 Here we have a test_results hash that contains a student’s name and their test score. We can use the select method to grab each student and their score, for every student that scored higher than 80 points. If we were to run this, our good_students hash would look like this:
 
 ```ruby
-$ good_students 
+$ good_students
 => {"Jane"=>95, "Adam"=>99, "Sue"=>89, "Kim"=>91}
 ```
 
@@ -196,14 +197,14 @@ __Practice__
 2) What would this each method output from this string?
    "ThisdmakesdmoredsensedwithoutdD's".split("d").each { |l| puts l }
 
-   Note: We are method chaining in the above example. The string is 
+   Note: We are method chaining in the above example. The string is
    being split into smaller separate strings at the parameter passed in.
    Then the each method is called on that array.
 
 3) What does select do for this hash?
    food = {
-     "apple" => "fruit", 
-     "carrot" => "vegetable", 
+     "apple" => "fruit",
+     "carrot" => "vegetable",
      "tomato" => "fruit"
    }
    food.select do |item, category|
