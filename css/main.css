@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
 
-a         { 
+a         {
   color: #a00a00;
   text-decoration: none
 }
@@ -62,6 +62,15 @@ ul.posts span {
 /*
 /*****************************************************************************/
 
+.site .inline-img {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.site .inline-img img {
+  width: 80%;
+}
+/** end of my edits **/
 .site {
   font-size: 125%;
   text-align: justify;
@@ -214,7 +223,7 @@ ul.posts span {
 
 .header img {
   width: 7.25em;
-  margin: 0 0 1em 3.5em;  
+  margin: 0 0 1em 3.5em;
 }
 
 /*****************************************************************************/
@@ -235,7 +244,7 @@ ul.posts span {
   }
   .header img {
     width: 5.25em;
-    margin: 0 0 0.5em 1.5em;  
+    margin: 0 0 0.5em 1.5em;
   }
   .site .footer {
     font-size: 100%;

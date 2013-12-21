@@ -40,6 +40,10 @@ And these are floats:
 
 Everytime you see a whole number like 8 or 19 you will know they are integers, and every time you see a number with a tasty sprinkle, or decimal, they will look like this: 3.4 or 8.1 and you will know they are (rootbeer) floats.
 
+<div class="inline-img">
+  <img src="/images/rootbeer_float.png"/>
+</div>
+
 Simple, right? Ok, let's keep going.
 
 The second type of data, or information given to a computer, are called _strings_. What’s a string? "Anything between quotes is a string." Since that last sentence was inside of quotes, it was technically a string! Easy peezy. You probably see strings all the time without even realizing it!
