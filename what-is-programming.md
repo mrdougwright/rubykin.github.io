@@ -41,7 +41,11 @@ And these are floats:
 Everytime you see a whole number like 8 or 19 you will know they are integers, and every time you see a number with a tasty sprinkle, or decimal, they will look like this: 3.4 or 8.1 and you will know they are (rootbeer) floats.
 
 <div class="inline-img">
-  <img src="/images/rootbeer_float.png"/>
+  <img src="/images/rootbeer_float.png" alt="Art by Vixuong Hong"/>
+</div>
+<div class="credit">
+  Art by
+  <a href="mailto:vthong1990@gmail.com">Vixuong Hong</a>
 </div>
 
 Simple, right? Ok, let's keep going.

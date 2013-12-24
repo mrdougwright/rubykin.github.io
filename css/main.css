@@ -70,6 +70,12 @@ ul.posts span {
 .site .inline-img img {
   width: 80%;
 }
+
+.site .credit {
+  text-align: right;
+  margin-right: 7em;
+  font-size: 12px;
+}
 /** end of my edits **/
 .site {
   font-size: 125%;
@@ -255,5 +261,8 @@ ul.posts span {
   }
   .site li span {
     display: none
+  }
+  .site .inline-img img {
+    width: 100%;
   }
 }
