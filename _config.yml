@@ -1,3 +1,7 @@
 name: RubyKin
 markdown: redcarpet
 pygments: true
+
+description: "Teach Kids Ruby - Help kids learn the basics of computer programming"
+main_title: "Teach Kids Ruby | RubyKin"
+production_url: http://rubykin.com

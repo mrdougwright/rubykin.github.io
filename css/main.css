@@ -26,9 +26,15 @@ h1, h2, h3, h4, h5, h6 {
 h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
 
-a         { color: #006666; }
+a         {
+  color: #a00a00;
+  text-decoration: none
+}
 a:hover   { color: #669999; }
-a:visited { color: #666699; }
+
+.spacer {
+  height: 30px;
+}
 
 /*****************************************************************************/
 /*
@@ -56,12 +62,32 @@ ul.posts span {
 /*
 /*****************************************************************************/
 
+.site .inline-img {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.site .inline-img img {
+  width: 80%;
+}
+
+.site .credit {
+  text-align: right;
+  margin-right: 7em;
+  font-size: 12px;
+}
+/** end of my edits **/
 .site {
   font-size: 125%;
   text-align: justify;
   width: 42em;
   margin: 3em auto 2em;
   line-height: 1.5em;
+  background-color: white;
+  padding: 5% 5% 1% 5%;
+  -moz-box-shadow:    3px 3px 5px 3px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 3px #ccc;
+  box-shadow:         3px 3px 5px 3px #ccc;
 }
 
 .site .header a {
@@ -75,7 +101,7 @@ ul.posts span {
 }
 
 .site .header h1.title a {
-  color: #a00;
+  color: #a00a00;
 }
 
 .site .header h1.title a:hover {
@@ -95,12 +121,38 @@ ul.posts span {
   color: #aaa;
 }
 
+.site ul {
+  list-style-type: none;
+  margin-left: 4%;
+}
+
+.site pre, .site code {
+  font-size: 1em;
+  background-color: #F3F3F3;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.site pre {
+  padding: 2% 5%;
+  margin: 2em;
+}
+
+.site code {
+  padding: 0.5% 0;
+}
+
+.site .center {
+  text-align: center;
+}
+
 .site .footer {
   font-size: 100%;
   color: #666;
   border-top: 4px solid #eee;
   margin-top: 2em;
   overflow: hidden;
+  padding: 1em 0 0.75em 0;
 }
 
 .site .footer .contact {
@@ -166,6 +218,9 @@ ul.posts span {
 .pull-right {
   float: right;
 }
+.pull-left {
+  float: left;
+}
 
 .title a {
   display: inline;
@@ -174,7 +229,7 @@ ul.posts span {
 
 .header img {
   width: 7.25em;
-  margin: 1.6em 0 1em 3.5em;  
+  margin: 0 0 1em 3.5em;
 }
 
 /*****************************************************************************/
@@ -191,10 +246,11 @@ ul.posts span {
     width: 15em;
     margin: 1em auto 1em;
     line-height: 1.5em;
+    padding-top: 2em
   }
   .header img {
     width: 5.25em;
-    margin: 1em 0 0.5em 1.5em;  
+    margin: 0 0 0.5em 1.5em;
   }
   .site .footer {
     font-size: 100%;
@@ -202,5 +258,11 @@ ul.posts span {
     border-top: 4px solid #eee;
     margin-top: 2em;
     overflow: hidden;
+  }
+  .site li span {
+    display: none
+  }
+  .site .inline-img img {
+    width: 100%;
   }
 }
