@@ -18,18 +18,19 @@ __Each__
 You can think of the `each` method as one that operates a block, or a specific piece of code, onto each element in your collection. For example, if we had a collection of toys we might store these in an array. If we wanted to print each toy on the screen, we can call the each method. In the example below, we create the toys array with our collection of toys, then we call each specific toy individually.
 
 ```ruby
-toys = ["car", "ball", "super hero action figure", "stuffed animal"]
+toys = ["car", "ball", "action figure", "stuffed animal"]
 toys.each { |toy| puts toy }
+
 # Now each toy will be put to the screen:
  car
  ball
- super hero action figure
+ action figure
  stuffed animal
 ```
 
 Let’s dig into the each method to see what we did. Since this method belongs to the Array class, we can call it on our toys array. We then give our `each` method a block of code to be executed or carried out and performed. In this case, we are using the `puts` method. In our `|pipes|` we define a temporary variable `toy` and call the puts method on each toy that is passed to our block.
 
-Our each method knows to look at each element (our four toys) inside the array. This is called iterating over the array. (Iterating over the array is just a fancy way of saying look at each toy in the collection). Now we store the value of each array element inside our |pipes| and call the puts method on each element. We could have written the same code like so:
+Our each method knows to look at each element (our four toys) inside the array. This is called iterating over the array. (Iterating over the array is just a fancy way of saying look at each toy in the collection). Now we store the value of each array element inside our `|pipes|` and call the puts method on each element. We could have written the same code like so:
 
 ```ruby
 toys.each do |toy|
@@ -37,21 +38,22 @@ toys.each do |toy|
 end
 ```
 
-The curly brackets are a way of writing `do` and `end` in one line. You don’t have to use them, but it is a shortcut that you can use if you want! Either way works, and Ruby will look to execute the code inside of our `do-end` or `{ }` block. Now, let’s look at how we might use the each method on a hash.
+The curly brackets are a way of writing `do` and `end` in one line. You don’t have to use them, but it is a shortcut that you can use if you want! Either way works, and Ruby will look to execute the code inside of our `do end` or `{ }` block. Now, let’s look at how we might use the each method on a hash.
 
 Imagine we had more than one toy in our collection. (If your parents are teaching you how to code in Ruby, you probably have a lot more than one toy in your collection. Lucky you!) We might use a hash to better represent or organize our toy box. Using each, we can print the toy and the number of toys in our collection.
 
 ```ruby
-toys = {"car" => 1, "ball" => 3, "super hero action figure" => 2,
+toys = {"car" => 1, "ball" => 3, "action figure" => 2,
 "stuffed animal" => 8}
-toys.each { |key, value| puts "#{key}: #{value}" }
-car: 1
-ball: 3
-super hero action figure: 2
-stuffed animal: 8
+toys.each { |key, value| puts "#{key} => #{value}" }
+
+car => 1
+ball => 3
+action figure => 2
+stuffed animal => 8
 ```
 
-When using the each method on a hash, Ruby knows that each element in the array has a key and a value. We could have used anything in our |pipes| to name our key and value pairs ( such as |x, y| ), but it’s easier to read when we identify our key and value by their names. We then call the puts method again on each element, use our friend interpolation ( the #{ } ) to place our variable values in our string, and finally put the string of the toy, and number of toys, to the screen.
+When using the each method on a hash, Ruby knows that each element in the array has a key and a value. We could have used anything in our `|pipes|` to name our key and value pairs ( such as `|x, y|` ), but it’s easier to read when we identify our key and value by their names. We then call the puts method again on each element, use our friend interpolation `#{ }` to place our variable values in our string, and finally put the string of the toy, and number of toys, to the screen.
 
 <br />
 __Each\_with\_index__
@@ -67,10 +69,10 @@ my_array[0]
 => ball
 ```
 
-In the example above, each item in the my_array can be called by its index. The ball is located at index 0, the bat at index 1, and our hat at index 2. If we only want to print every other item, we might use the each_with_index method like this:
+In the example above, each item in the my\_array can be called by its index. The ball is located at index 0, the bat at index 1, and our hat at index 2. If we only want to print every other item, we might use the each\_with\_index method like this:
 
 ```ruby
-my_array = ['ball', 'bat', 'hat', 'uniform', 'shoes', 'lucky glove']
+my_array = ['ball', 'bat', 'hat', 'uniform', 'shoes']
 my_array.each_with_index do |item, index|
   if index % 2 == 0
     puts item
@@ -83,7 +85,9 @@ Remember that a modulo is a way of looking at the remainder (left over part) of 
 We could use the `even?` method and curly braces to simplify our enumerable method.
 
 ```ruby
-my_array.each_with_index { |item, index| puts item if index.even? }
+my_array.each_with_index do |item, index|
+  puts item if index.even?
+end
 
 ball    #item at index 0
 hat     #item at index 2
@@ -93,8 +97,10 @@ shoes   #item at index 4
 Ruby's `even?` method allows us to skip the modulo part altogether. `Even?` will return true if the number it is called upon is an even number. Here is a way to see how the computer executes (carries out) each step in the each\_with\_index method.
 
 ```ruby
-my_array = ['ball', 'bat', 'hat', 'uniform', 'shoes', 'lucky glove']
-my_array.each_with_index { |item, index| puts item if index.even? }
+my_array = ['ball', 'bat', 'hat', 'uniform', 'shoes']
+my_array.each_with_index do |item, index|
+  puts item if index.even?
+end
 
 |'ball', 0| if 0 is even?, then puts 'ball'
 true => puts 'ball'
@@ -111,11 +117,9 @@ false
 |'shoes', 4| if 4 is even?, then puts 'shoes'
 true => puts 'shoes'
 
-|'gloves', 5| if 5 is even?, then puts 'gloves'
-false
 ```
 
-The method starts out with an item and its index from the array. It then performs the block of code we specified between the {curly brackets}. In this example it will only put the name of the item if the index is an even number. Otherwise, the if statement will return false and Ruby will not put anything to the screen for that particular block of code.
+The method starts out with an item and its index from the array. It then performs the block of code we specified between the `do` and `end` wrappers. In this example it will only put the name of the item if the index is an even number. Otherwise, the if statement will return false and Ruby will not put anything to the screen for that particular block of code.
 
 <br />
 __Select__
@@ -153,14 +157,14 @@ good_students = test_results.select do |student, score|
 end
 ```
 
-Here we have a test_results hash that contains a student’s name and their test score. We can use the select method to grab each student and their score, for every student that scored higher than 80 points. If we were to run this, our good_students hash would look like this:
+Here we have a test\_results hash that contains a student’s name and their test score. We can use the select method to grab each student and their score, for every student that scored higher than 80 points. If we were to run this, our good\_students hash would look like this:
 
 ```ruby
 $ good_students
 => {"Jane"=>95, "Adam"=>99, "Sue"=>89, "Kim"=>91}
 ```
 
-You can imagine a program that runs simple select methods for hundreds of students in many classes in order to group students by their grades. Ruby is useful for sorting, counting, classifying and organizing data. It would take a person many hours to organize hundreds of students by grade and name, but a computer can do it almost instantly!
+You can imagine a program that runs simple select methods for hundreds of students in many classes in order to group students by their grades. Ruby is useful for sorting, counting, classifying and organizing data. It would take a person many hours to organize hundreds of students by grade and name, but a good program can do it almost instantly!
 
 <br />
 __Map__
@@ -168,7 +172,9 @@ __Map__
 Last but not least, let’s check out the map method. So far we’ve seen how different methods affect elements from our collections. With map, we can select certain elements and modify them at the same time. Let’s jump into an example.
 
 ```ruby
-["dog", "cat", "snake", "mouse"].map { |animal| animal.capitalize }
+["dog", "cat", "snake", "mouse"].map do |animal|
+  animal.capitalize
+end
 => ["Dog", "Cat", "Snake", "Mouse"]
 ```
 
@@ -195,11 +201,14 @@ __Practice__
    [1,2,3,4,5].each { |num| puts num if num.odd? }
 
 2) What would this each method output from this string?
-   "ThisdmakesdmoredsensedwithoutdD's".split("d").each { |l| puts l }
+   "ThisdmakesdmoredsensedwithoutdD's".split("d").each {
+    |letter| puts letter
+  }
 
-   Note: We are method chaining in the above example. The string is
-   being split into smaller separate strings at the parameter passed in.
-   Then the each method is called on that array.
+   Note: We are method chaining in the above example.
+   The string is being split into smaller separate
+   strings at the parameter passed in. Then the each
+   method is called on that array.
 
 3) What does select do for this hash?
    food = {

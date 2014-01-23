@@ -7,16 +7,16 @@ description: A method written in code is a way of doing something. It's a small 
 
 A big part of programming is simply breaking down large problems into smaller and smaller instructions that can work together to create a solution. Let’s think of this using a real world example. Imagine you are playing baseball and its your turn to bat. This critical moment when you swing and hit the ball for a home run can be seen as many smaller moments that led to the big play.
 
-First you picked up a bat. Then you took a few practices swings. Then you walked up to the plate, you readied your stance, looked at the pitcher. Finally, you took a breath and swung! Each of these small steps can be seen as methods (small chunks of instructions) that led to your home run.
+First you picked up a bat. Then you took a few practices swings. Then you walked up to the plate, you readied your stance, looked at the pitcher. Finally, you took a breath and swung! Each of these small steps can be seen as methods (small chunks of instructions) that you gave to your body to get a home run.
 
-We can look at this another way. When you play a video game and reach a new level, there may actually be _real_ methods that are called by the game. Perhaps the game contains a 'life count' method that counts how many lives you have left. Another method could tally up your current score. A third method may calculate your character's current state of health. Each of these methods would take input from your actions in the game, and go back and get information from the program to keep everything updated and accurate.
+We can look at this another way. When you play a video game and reach a new level, there may actually be _real_ methods that are called by the game. Perhaps the game contains a `life_count` method that counts how many lives you have left. Another method could tally up your current score. A third method may calculate your character's current state of health. Each of these methods would take input from your actions in the game, and go back and get information from the program to keep everything updated and accurate.
 
-To understand methods a little better, let’s jump into writing one ourselves. Here’s a very simple method you can write yourself that merely puts information to the screen. You can write a method inside IRB (the Ruby Interpreter) without creating a new file. There is an online version as well at <a href="http://repl.it/languages/Ruby" target="_blank">Repl.it</a>).
+To understand methods a little better, let’s jump into writing one ourselves. Here’s a very simple method you can write yourself that merely puts information to the screen. You can write a method inside IRB without creating a new file. You can use the online version as well at <a href="http://repl.it/languages/Ruby" target="_blank">Repl.it</a>. Just write your code on the left side and hit the play button to run it.
 
 In your terminal type irb:
 
 ```ruby
-               $ irb   # type irb to open the ruby interpreter
+  $ irb   # type irb to open the ruby interpreter
 irb(main):001:0> def hello
 irb(main):002:1> puts "Hello World!"
 irb(main):003:1> end
@@ -29,7 +29,9 @@ Like at the end of a movie or bedtime story, the word `end` in Ruby means the sa
 
 In order to write and save several methods, it will be easier to create a file and run the code inside the file, so let’s do that. Exit the terminal by typing `exit`.
 
-Open up a text editor. I like using <a href="http://www.sublimetext.com/" target="_blank">Sublime</a>, but you can use any kind. There are several free text editors for download online. Create a new file and type in the method we wrote above.
+Open up a text editor. I like using <a href="http://www.sublimetext.com/" target="_blank">Sublime</a>, but you can use any kind. There are several free text editors for download online. Or you can use <a href="http://repl.it/languages/Ruby" target="_blank">repl.it</a> without saving.
+
+Create a new file and type in the method we wrote above.
 
 ```ruby
 1. def hello
@@ -106,15 +108,17 @@ def years_to_days_old(years)
 end
 ```
 
-If we ran this method our input would be stored in the years variable. We would then multiply 365 days by our `years` input and store the result in our variable `result`. The puts method outputs our string to the screen, using interpolation to display the result in our answer string.
+Let's go over the method we wrote above. First, our method name is set to `years_to_days_old`. It takes one argument as input, stored in the variable `years`. The first line of our method creates a new variable `result` and assigns it the value of our passed-in argument `years`, multiplied by 365. This gives us the number of days per years. We then simply put the string "You are x days old!" to the screen, where x is our `result` variable.
 
-```ruby
+Here's what it might look like if we call the method and pass in 10 years as the input.
+
+```
 years_to_days_old(10)
 You are 3650 days old!
 => nil
 ```
 
-String interpolation is when Ruby allows a piece code to exist inside a string. This can be a variable or even math, written with a pound sign and curly braces `#{ }`. Here are some examples to get the idea.
+Our puts method outputs the string, using interpolation the `#{ }` part to display the result in our answer string. String interpolation is when Ruby allows a piece code to exist inside a string. This can be a variable or even math, written with a pound sign and curly braces `#{ }`. Here are some examples to get the idea.
 
 ```ruby
 x = 15
@@ -125,7 +129,7 @@ puts "This one is doing math: #{x + 5}"
 => puts This one is doing math: 20
 ```
 
-We could add more functionality to the `years_to_days_old` method and remove the argument input. If we use Ruby’s `gets` method we can capture the input from a user’s response. We call chomp to remove (or chomp and eat) the new line character (like we did earlier). The `to_i` method turns the user’s string input into an integer. Our method might look something like this.
+We could add more functionality to the `years_to_days_old` method and remove the argument input. If we use Ruby’s `gets` method we can capture the input from a user’s response. We call chomp to remove (or chomp and eat) the new line character like we did in a previous chapter. The `to_i` method turns the user’s string input into an integer. Our method might look something like this.
 
 ```ruby
 1. def years_to_days_old
@@ -147,7 +151,7 @@ Let’s run this from our IRB terminal. First, save the code above in a file cal
 How old are you in years?
 ```
 
-Now that you have a basic understanding of methods, see if you can write one yourself. You could write an adventure word game or create your own calculator.
+Now that you have a basic understanding of methods, see if you can write one yourself. You could write an adventure word game or create your own calculator. The best way to get started is to just experiment!
 
 <br />
 __Practice__
@@ -163,13 +167,15 @@ __Practice__
      ...
    end
 
-3) What does this method return when called? (What's its output?)
+3) What does this method return when called?
+(What's its output?)
    def calculus
      numbers = (25 * 37) / 42
      numbers / 12 * 25
      "Programming is not math"
    end
 
-4) Write a method that takes a word as an argument. Make the method
-   return the word and the string “, is awesome!”.
+4) Write a method that takes a word as an argument.
+Make the method return the word and the string
+" is awesome!".
 ```

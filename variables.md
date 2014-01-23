@@ -13,7 +13,20 @@ The value of x is?
 => 12
 ```
 
-In programming, variable storage is slightly different due to the way memory storage is created. In an effort to _not_ waste memory, we don't store duplicate information. In the following example, each variable (X, Y and Z) will point to the same place in memory because they store the same value, twelve.
+In Ruby, a variable name is defined once you write (almost) anything left of the equal sign. The equal sign (as in most programming languages) is used to _assign_ the value to the right, to the variable. Here are a few more examples of creating variables.
+
+```ruby
+myVar = "my string variable"
+a_long_var_name = 42
+myCat = "whiskers"
+```
+
+<br />
+__Variable Storage in Memory__
+
+With computers, variable storage is slightly different than common math, due to the way memory storage is created. Don't worry if this section seems complicated, you will start to get the hang of it as you write more code.
+
+In an effort to _not_ waste memory, the computer avoids storing duplicate information. In the following example, each variable `(X, Y and Z)` will point to the same place in memory because they store the same value: twelve.
 
 ```
 x = 12
@@ -26,20 +39,23 @@ In order to store the value 12, the computer creates a location in memory with a
 Yet variables don't _actually_ store their information--they point to it. Or in another way, variables store memory addressess that store information. In the example above, each variable points to the same memory address that stores the number 12. This way the computer doesn't need to create three different memory locations for one value, it can use ABC12 for all three.
 
 ```
-x = 12  => mem address: ABC12
-y = x   => mem address: ABC12
-z = 12  => mem address: ABC12
+x = 12  => memory address: ABC12
+y = x   => memory address: ABC12
+z = 12  => memory address: ABC12
 ```
 
-Now that you know how variables don't store information (they store memory addresses) see if you can figure out the end value of X:
+Now that you know how variables store information (or memory addresses) see if you can figure out the end value of X:
 
 ```
-y = 5   => y points to memory address AB1, which contains the value 5
+y = 5   => y points to memory address AB1, which contains
+the value 5
 x = y   => x points to memory address AB1
-y = 7   => y now points to memory address CD1, which contains 7
+y = 7   => y now points to memory address CD1, which
+contains 7
+x equals ?
 ```
 
-The trick here is to understand that X does _not equal_ Y. Remember, X only _POINTS_ to the value stored in the memory address that Y points to (AB1). No matter what happens later to Y, the only thing X needs to remember is the location of AB1 (which will always be 5 while this program is running).
+The trick here is to understand that X does _not equal_ Y. Remember, X only _POINTS_ to the value stored in the memory address that Y points to (AB1), at the time it was assigned. No matter what happens later to Y, the only thing X needs to remember is the location of AB1 (which will always be 5 while this program is running).
 
 When we change the value of Y to 7, we are actually telling the computer to create a new memory address that contains the value 7 and point to it. X does not change its original address, so the value of X remains 5.
 
@@ -57,23 +73,35 @@ y = "new"  => y.object_id => 8333
 x equals?  => x.object_id => 7021
 ```
 
-Once we change the value of Y, we create a new memory location with a new value stored ("new"). X does not equal "new", it still equals the value stored in the original memory address that it pointed to at the time we set X equal to Y.
+Once we change the value of Y, we create a new memory location with a new value stored (the string "new"). X does not equal "new", it still equals the value stored in the original memory address that it pointed to at the time we set X equal to Y (the string "test").
 
-When we change variables and add new information, Ruby creates more memory locations with specific addresses--if none of the current addresses are holding the same information.
+When we change variables and add new information, Ruby creates more memory locations with specific addresses--if none of the current addresses are holding the same information. And actually, Ruby has already created several object ids to help store common numbers and letters in memory, like the number 12 in our example above.
 
 Don't worry if this is all too confusing. You don't actually _need_ to fully understand this concept to program. As we move along through the other core concepts of coding you will begin to see how variables work within the bigger picture.
+
+The key point to remember is that an `=` equals sign in programming means "assign the value to the right of me, to the name on the left." Visually, that would look like this:
+
+```
+number12 = 12
+
+(variable name)  (is assigned)   number 12
+  number12             =               12
+
+```
 
 <br />
 __Practice__
 
 ```
-1) Store the value of 54 / 3 into the variable x. What is the value of x?
+1) Store the value of 54 / 3 into the variable x. What is
+the value of x?
 
-2) Give the value of x to y, a new variable. Now make x equal to itself
-divided by 3. What’s the value of x? What’s the value of y?
+2) Give the value of x (from problem 1) to y, a new
+variable. Now make x equal to itself divided by 3. What’s
+the value of x? What’s the value of y?
 
-3) What if we performed some math on our variables? If we set x to 12,
-what’s x divided by 3?
+3) What if we performed some math on our variables? If we
+set x to 12, what’s x divided by 3?
 
 4) What’s the value of x now?
 ```

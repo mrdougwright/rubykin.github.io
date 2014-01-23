@@ -27,7 +27,8 @@ else
 end
 ```
 
-In a conditional, the computer checks to see that the code after the _if_ is true. We call this code a block, which just means a small piece of code that has some function. In this case, our block is `X <= 10`.
+In a conditional, the computer checks to see that the code after the _if_ is true. We call this code a block, which just means a small piece of code that has some function. In this case, our block is
+`X <= 10`.
 
 So, _if_ our block is _true_ (if X is less than or equal to 10), the computer will perform the action in the next line below the if statement. Since X is equal to 5, it _is_ less than 10, and the value 5 is _put_ on the screen. If X were 11, the conditional (X <= 10) would realize this was a false statement, and the string "Number is greater than 10" would be outputted (shown) on the screen.
 
@@ -60,6 +61,7 @@ Here are the basic elements used to evaluate conditionals:
 <   # less than
 >   # greater than
 <=  # less than or equal to
+>=  # greater than or equal to
 ==  # equal to
 !=  # not equal to
 ```

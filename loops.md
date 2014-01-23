@@ -5,7 +5,7 @@ weight: 6
 description: A loop is a bit of code that repeats a specific task, until we tell it to stop. This chapter explains the basic loop used in programming.
 ---
 
-At its most basic level, a loop is when a computer repeats a specific task. A computer is kind of like a robot, because you can make it do lots of things very quickly. When you give it a loop, you're telling the computer to repeat a task over and over. Since the computer can perform thousands of operations within a second, loops become very powerful. Let’s look at a previous programing example again to help us to start understanding loops.
+At its most basic level, a loop is when a computer repeats a specific task. A computer is kind of like a robot, because you can make it do lots of things very quickly. When you give it a loop, you're telling the computer to repeat a task over and over. Since the computer can perform thousands of operations within a second, loops become very powerful. Let’s look at a previous code example again to help us understand loops.
 
 ```ruby
 x = 0
@@ -16,13 +16,13 @@ end
 puts "Finished the while loop."
 ```
 
-This is called a `while` loop. The statement after the word _while_ must be true for the loop to continue running. So, while the x variable is less than 5, the computer will execute the code (follow our block of instructions) between _while_ and _end_ until X no longer is less than 5.
+This is called a `while` loop. The statement after the word _while_ must be true for the loop to continue running. In this example, we set x to the value zero. Our _while_ loop checks to see if our statement is true: `x variable is less than 5` and it is! So, the computer executes the code (follows our block of instructions) between _while_ and _end_ until X is no longer less than 5.
 
-This loop tells the computer to perform a task _WHILE_ certain things are happening. Your parents would tell you to look both ways, _while_ you cross the street. In a way, you are being programmed to perform the task of looking both ways before crossing the street.
+This loop tells the computer to perform a task _WHILE_ certain things are happening. Your parents would tell you to look both ways, _while_ you cross the street. In a way, you are being programmed to perform the task of looking both ways before crossing the street. If there are no cars, it's safe to cross.
 
-The word `puts` is a method that simply "puts" the following content to the screen.
+The word `puts` is a method that simply "puts" the following content to the screen. Technically, it means `put string` and takes a string argument to put on the screen.
 
-Here is some pseudo code to see what's happening while this executes.
+Here is some pseudo code to see what's happening in our _while_ code.
 
 ```
 #psuedo code
@@ -52,7 +52,7 @@ Finished the while loop.
 _While_ loops are great for counting, but they can be used in other ways as well. For example, what if we played a game that wouldn’t let the player move forward unless they got the right answer?
 
 ```ruby
-answer = ""  # setting an empty String variable
+answer = ""  # creating an empty String variable
 while answer != "Ruby"
   puts "Sorry, wrong answer." unless answer == ""
   puts "What is the best programming language?"
@@ -61,55 +61,56 @@ end
 puts "That's right!"
 ```
 
-In the example above, the computer will continue to prompt the user for "the best programming language" until the answer equals "Ruby". In the above example, we learned a couple of new Ruby vocab words: gets and chomp.
+We are using a few new Ruby vocab words, or methods: `gets` and `chomp`. Don't worry, we will get to methods later, but here's what's happening.
 
-Gets is a method, or a specific way of doing something (we'll learn more about methods later). Gets is like a little helper monkey that helps the computer "get" a piece of information that is entered into the terminal.
+In the example above, the computer will continue to prompt the user for "the best programming language" until the answer equals "Ruby". We assign the users answer to the variable `answer` using the built-in Ruby method `gets`. Gets is like a little helper monkey that helps the computer "get" a piece of information that is entered into the terminal.
 
 Chomp is also a method. Its special task is to remove the last _new line_ character. When you hit _enter_ the `\n` new line character get stored, but chomp will remove it.
 
-Gets and chomp are merely methods used to assign the user’s input to the answer variable (without that strange new line character). Once the user enters the right answer, the loop ends and ‘That’s right!’ is printed to the screen.
+Gets and chomp are merely methods we use to cleanly assign the user’s input to the answer variable (without that strange new line character). Once the user enters the right answer, the computer exits the loop and ‘That’s right!’ is printed to the screen.
 
 <br />
 We can look at another example using a _for loop_.
 
 ```ruby
 for number in 1..5 do
-  puts "The current number is #{number}"
+  puts "The current value is #{number}"
 end
 ```
 
-The for loop starts without a true condition being met. This loop will execute the code between _do_ and _end_ once for every number in the range 1 through 5 (that's the 1..5 part). The word `number` is just a temporary variable that represents each item within our _for loop_ range. For example, a range of 2 through 8 would be written 2..8. A range of 1 through 25 would be written 1..25. Easy, right?
+The for loop starts without a true condition being met. This loop will execute the code block between _do_ and _end_ once for every number in the range 1 through 5 (that's the 1..5 part). The word `number` is just a temporary variable that represents each item within our _for loop_ range. For example, a range of 2 through 8 would be written 2..8. A range of 1 through 25 would be written 1..25. Easy, right?
 
 The funny number sign and curly brackets is a string interpolation. We will cover this later, but all you need to know right now is that it places the value of our _number_ variable inside the string. The output would look like this:
 
 ```
-The current number is 1
-The current number is 2
-The current number is 3
-The current number is 4
-The current number is 5
+The current value is 1
+The current value is 2
+The current value is 3
+The current value is 4
+The current value is 5
 ```
 
 Hopefully you are beginning to see the power of loops in Ruby. There are a few other loops, but _while_ and _for_ are the standard ones to start with. When we combine loops with collections, our programs become even more valuable!
 
-Imagine a comic book collection, or a marble collection, or a toy collection, they are full of individual comics or marbles or toys. Imagine how much easier it would be to count, sort and organize our collections if we had the super fast computers helping us while we do other things! Next, we’ll show you how to get Ruby's help in handling collections. For now we'll finish the chapter with some examples.
+Imagine a comic book collection, or a marble collection, or a toy collection. They are full of individual comics or marbles or toys. Imagine how much easier it would be to count, sort and organize our collections if we had the super fast computers helping us while we do other things! Next, we’ll show you how to get Ruby's help in handling collections. For now we'll finish the chapter with some examples.
 
 <br />
 __Practice__
 
-Let’s pretend we’re at the beach, patiently waiting for our wizard to arrive at sunset. We could represent this as a piece of code. More specifically, we could write this as a while loop. Let’s assume the sun sets around 7pm, and we start waiting on the beach at 5pm.
+Let’s pretend we’re at the beach, patiently waiting for our wizard to arrive at sunset. Upon every hour we check to see if our wizard has arrived. We could represent this as a piece of code. More specifically, we could write this as a while loop. Let’s assume the sun sets around 7pm, and we start waiting on the beach at 5pm.
 
 ```ruby
 sunset = 7
-time = 5
+current_time = 5
 ```
 
-We create a variable called sunset and give it the value 7. We do the same for time and set it to 5.
+We create a variable called sunset and give it the value 7. We do the same for current_time and set it to 5.
 
 ```ruby
-while time <= sunset do
-  puts "Still waiting for the wizard. It’s now #{time} o’clock"
-  time = time + 1
+while current_time <= sunset do
+  puts "Still waiting for the wizard."
+  puts "It’s now #{current_time} o’clock"
+  current_time = current_time + 1
 end
 puts "The wizard has arrived!"
 ```
@@ -124,5 +125,5 @@ The wizard has arrived!
 ```
 
 ```
-1) What’s the current value of the _time_ variable?
+1) What’s the current value of the current_time variable?
 ```
