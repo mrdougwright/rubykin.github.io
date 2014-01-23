@@ -19,7 +19,7 @@ This book will help you learn the basics of programming, using the Ruby language
 
 Each chapter will go into more detail with basics at the beginning and more complicated material at the end. For now, let’s get started with some simple ideas.
 
-<div class="inline-img">
+<div class="inline-img reg">
   <img src="/images/rootbeer_float.png" alt="Art by Vixuong Hong"/>
 </div>
 <div class="credit">
@@ -54,8 +54,8 @@ The second type of data, or information given to a computer, are called _strings
 
 For example, have you ever seen an alert message on your computer saying something like this:
 
-<div class="inline-img">
-  <img src="/images/alert_message.png" />
+<div class="inline-img reg">
+  <img src="/images/alert_message.png" alt="Alert message with string example"/>
 </div>
 
 Somewhere inside a program or web application, an engineer wrote the sentence "File does not exist!" and put it in quotes to create a string. When you were alerted with the pop up box, that string was printed to the screen.

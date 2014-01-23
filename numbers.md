@@ -30,12 +30,16 @@ __Installing Ruby__
 
 If you’re using Mac OS X, Ruby is already installed. Hooray! Just open your _Terminal_ application. To find terminal you can click the magnifying glass in the top right corner of your screen, then type Terminal and click the first result. (Or you can navigate to Applications - Utilities - Terminal and double click).
 
+<div class="inline-img lrg">
+  <img src="/images/terminal_directions.png" alt="How to find Terminal App"/>
+</div>
+
 If you’re using Linux, open up a shell, type irb and hit enter.
 And if you’re on Windows, open fxri from the Ruby section of your Start Menu.
 
 As a third option, check out <a href="http://repl.it/languages/Ruby" target="_blank">Repl.it</a>. This is a pretty fantastic tool that allows you to type code into your web browser. No installation required!
 
-Next, type the letters `irb` into the screen and hit enter.
+Next, type the letters `irb` into the terminal or shell screen and hit enter.
 
 <br />
 __So, what is IRB anyway?__
