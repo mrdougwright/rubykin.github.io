@@ -32,18 +32,28 @@ In fact, you can write either of these lines of code and the result will be the 
 
 In the example above, there are two strings, one is `"Cat and "` and the second string is `"Dog"`. By giving the command to add the two strings `+`, we are able to join both strings together using the magic of concatenation. (Concatenation is just a fancy old Latin word for join together).
 
+<div class="inline-img">
+  <img src="/images/cat-dog.png" alt="Art by Vixuong Hong"/>
+</div>
+<div class="credit">
+  Art by
+  <a href="mailto:vthong1990@gmail.com">Vixuong Hong</a>
+</div>
+
 Ready to try it out?
 
 Open Terminal again (or <a href="http://repl.it/languages/Ruby" target="_blank">Repl.it</a>) and try multiplying and adding a few strings yourself to get the hang of it.
 
-Now try adding a number with a string. It didn’t work did it? Remember that joker `"9"` string from our previous example in [chapter 1](/what-is-programming.html)? Ruby doesn’t see this as the actual number 9. Instead it sees a string because, to Ruby, anything that is inside the quote isn’t just a word or a number anymore, everything inside the quotes is a string. That's why when we try to add a string with a number, Ruby gives us an error:
+Now try adding a number with a string. It didn’t work did it? Remember that joker `"9"` string from our previous example in [chapter 1](/what-is-programming.html)? Ruby doesn’t see this as the actual number 9, instead it sees a string.
+
+To Ruby, anything that is inside the quote isn’t just a word or a number anymore. Everything inside the quotes is a string. So when we try to add a string with a number, Ruby gives us an error:
 
 ```
 "9" + 9
 => TypeError: can't convert Fixnum into String
 ```
 
-In the above example, we would see `"9" + 9` and think the answer is 18. But for Ruby, she doesn’t see it like that, for Ruby she sees `"STRING" + NUMBER`. And you can't add strings and numbers, because they are different types of data.
+In the above example, we would see `"9" + 9` and think the answer is 18. But Ruby doesn’t see it like that. Ruby sees `"STRING" + NUMBER`. And you can't add strings and numbers, because they are different _types_ of data.
 
 This doesn’t mean we can’t do this sort of equation, it just means we need to use a trick to make sure Ruby understands what we want. Of course, there are lots of interesting methods or _actions_ we can perform to get Ruby to do what we want.
 

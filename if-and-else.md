@@ -13,7 +13,17 @@ So far, we’ve learned how Ruby can perform basic math on numbers, store words 
 
 One way we do that is with conditionals. This is why your parents say they love you unconditionally, because there is no _if_ or _else_, there is only 100% love, no matter what. Ruby doesn’t love anything unconditionally, Ruby needs to be convinced by conditions.
 
-A conditional is something that depends on other factors. If this _something_ happens, do _that_, otherwise, do something _else_. For example, if you are hungry, eat a sandwich, else, don’t eat a sandwich! Here’s how an If Else conditional might look in Ruby.
+A conditional is something that depends on other factors. If this _something_ happens, do _that_, otherwise, do something _else_. For example, if you are hungry, eat a sandwich, else, don’t eat a sandwich!
+
+<div class="inline-img">
+  <img src="/images/eat-sandwich.png" alt="Art by Vixuong Hong"/>
+</div>
+<div class="credit">
+  Art by
+  <a href="mailto:vthong1990@gmail.com">Vixuong Hong</a>
+</div>
+
+Here’s how an If Else conditional might look in Ruby.
 
 ```ruby
 # set an x variable to the value 5
