@@ -2,7 +2,7 @@
 layout: default
 title: If and Else
 weight: 5
-description: A conditional in software programming is a basic quesion. If some condition is true do it. Else do something different.
+description: A conditional in software programming is a basic question. If some condition is true do it. Else do something different.
 ---
 
 "If you clean your room then you can play, or else you won’t." - Mom

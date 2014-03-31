@@ -25,7 +25,7 @@ The word `puts` is a method that simply "puts" the following content to the scre
 Here is some pseudo code to see what's happening in our _while_ code.
 
 ```
-#psuedo code
+# pseudo code
 1) x is 0
 2) Is 0 less than 5? True. puts x. x = 0 + 1. x is 1.
 3) Is 1 less than 5? True. puts x. x = 1 + 1. x is 2.

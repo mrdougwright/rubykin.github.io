@@ -46,7 +46,7 @@ And these are floats:
 1.2, 3.14, 5.12345, 0.35
 ```
 
-Everytime you see a whole number like 8 or 19 you will know they are integers, and every time you see a number with a tasty sprinkle, or decimal, they will look like this: 3.4 or 8.1 and you will know they are (rootbeer) floats.
+Every time you see a whole number like 8 or 19 you will know they are integers, and every time you see a number with a tasty sprinkle, or decimal, they will look like this: 3.4 or 8.1 and you will know they are (root beer) floats.
 
 Simple, right? Ok, let's keep going.
 
