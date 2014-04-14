@@ -6,7 +6,14 @@ description: Collections are lists of data, written as either hashes or arrays i
 ---
 
 In order to store data, we use collections. There are two types of ways we store our data collections. One is called an Array, the other is called a Hash. You can think about a collection of data like a trunk of toys. Let’s start with the Array toy chest first.
-
+<br />
+<div class="inline-img">
+  <img src="/images/array-toy-chest.png" alt="Art by Vixuong Hong"/>
+</div>
+<div class="credit">
+  Art by
+  <a href="mailto:vthong1990@gmail.com">Vixuong Hong</a>
+</div>
 <br />
 __Arrays__
 
