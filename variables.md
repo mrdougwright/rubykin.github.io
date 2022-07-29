@@ -36,7 +36,7 @@ z = 12
 
 In order to store the value 12, the computer creates a location in memory with an address, let's assume the address is ABC12. In this sense, a variable is like an X on a treasure map, guiding you to the right location.
 
-Yet variables don't _actually_ store their information--they point to it. Or in another way, variables store memory addressess that store information. In the example above, each variable points to the same memory address that stores the number 12. This way the computer doesn't need to create three different memory locations for one value, it can use ABC12 for all three.
+Yet variables don't _actually_ store their information--they point to it. Or in another way, variables store memory addresses that store information. In the example above, each variable points to the same memory address that stores the number 12. This way the computer doesn't need to create three different memory locations for one value, it can use ABC12 for all three.
 
 ```
 x = 12  => memory address: ABC12

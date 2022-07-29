@@ -1,6 +1,5 @@
 name: RubyKin
-markdown: redcarpet
-pygments: true
+markdown: kramdown
 
 description: "Teach Kids Ruby - Help kids learn the basics of computer programming"
 main_title: "Teach Kids Ruby | RubyKin"

@@ -25,7 +25,7 @@ The word `puts` is a method that simply "puts" the following content to the scre
 Here is some pseudo code to see what's happening in our _while_ code.
 
 ```
-#psuedo code
+# pseudo code
 1) x is 0
 2) Is 0 less than 5? True. puts x. x = 0 + 1. x is 1.
 3) Is 1 less than 5? True. puts x. x = 1 + 1. x is 2.
@@ -48,6 +48,14 @@ The end result looks something like this:
 4
 Finished the while loop.
 ```
+
+<div class="inline-img">
+  <img src="/images/roller-coaster.png" alt="Art by Vixuong Hong"/>
+</div>
+<div class="credit">
+  Art by
+  <a href="mailto:vthong1990@gmail.com">Vixuong Hong</a>
+</div>
 
 _While_ loops are great for counting, but they can be used in other ways as well. For example, what if we played a game that wouldn’t let the player move forward unless they got the right answer?
 

@@ -181,7 +181,7 @@ for that string.
 1) What’s the current value of the time variable?
 => 8
 
-# Even though our last value outputed was 7, the next
+# Even though our last value outputted was 7, the next
 code block (current_time = current_time + 1) is executed,
 and so our variable increments by 1 to equal 8.
 ```

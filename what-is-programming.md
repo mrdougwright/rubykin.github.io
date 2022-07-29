@@ -19,7 +19,7 @@ This book will help you learn the basics of programming, using the Ruby language
 
 Each chapter will go into more detail with basics at the beginning and more complicated material at the end. For now, let’s get started with some simple ideas.
 
-<div class="inline-img reg">
+<div class="inline-img">
   <img src="/images/rootbeer_float.png" alt="Art by Vixuong Hong"/>
 </div>
 <div class="credit">
@@ -46,7 +46,7 @@ And these are floats:
 1.2, 3.14, 5.12345, 0.35
 ```
 
-Everytime you see a whole number like 8 or 19 you will know they are integers, and every time you see a number with a tasty sprinkle, or decimal, they will look like this: 3.4 or 8.1 and you will know they are (rootbeer) floats.
+Every time you see a whole number like 8 or 19 you will know they are integers, and every time you see a number with a tasty sprinkle, or decimal, they will look like this: 3.4 or 8.1 and you will know they are (root beer) floats.
 
 Simple, right? Ok, let's keep going.
 
@@ -54,7 +54,7 @@ The second type of data, or information given to a computer, are called _strings
 
 For example, have you ever seen an alert message on your computer saying something like this:
 
-<div class="inline-img reg">
+<div class="inline-img">
   <img src="/images/alert_message.png" alt="Alert message with string example"/>
 </div>
 
